@@ -1,0 +1,14 @@
+ 
+ /* Diseñoindependiente de cabecera  */
+ @import url("./cabecera.css");
+/* enlaces modificadores por modulos */
+@import url("./Vt.css");
+@import url("./Video.css");
+@import url("./Tic.css");
+@import url("./carts.css");
+/* body */
+@import url("./app2.css");
+@import url("./boton.css");
+
+
+

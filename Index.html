@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../Assets/Css/main.css">
+
+  <!-- <script src="../Assets/Js/main.js" type="module"></script> -->
+  <script src="../Assets/Js/Vt.js"></script>
+  <script defer src="../Assets/Js/app.js"></script>
+  <script src="../Assets/Js/Tic.js"></script>
+  <script src="../Assets/Js/seleccionlogin.js"></script>
+  <!-- atributo defer indica al navegador que no espere por el script. En lugar de ello, debe seguir procesando el HTML -->
+
+</head>
+
+<body>
+  <header>
+    <section>
+      <h2>Ejercicio de html</h2>
+    </section>
+    <Br>
+    <div class="intro">
+      <p>contenido para agregar descripocion e información</p>
+    </div>
+    <br>
+    <figure>
+      <img src="../Assets/Img/Head/M_header1.jpg" alt="Esta imagen representa la velocidad de carga de las páginas"
+        title="Tiempo optimo de carga👌" />
+      <!-- cierre de etiquetas -->
+      <figcaption>La velocidad de al optimizar el código ☝️</figcaption>
+      <!-- imagne encapsulada con descripcion de pie -->
+    </figure>
+  </header>
+  <main>
+    <section class="s1">
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event,'videos')">Videos</button>
+        <button class="tablinks" onclick="openCity(event,'Tokyo')">Proyecto z</button>
+        <button class="tablinks" onclick="openCity(event,'TicTacToe')">TicTacToe</button>
+        <button class="tablinks" onclick="openCity(event,'Cars')">Cars</button>
+      </div>
+      <div id="videos" class="tabcontent">
+        <h3>Videos</h3>
+        <p>Videos de prueba.</p>
+
+            
+            <div class="delimitador">
+
+              <div class="contenedor1">
+                <video class="video1" controls poster="../Assets/Img/Cont/parapresentación.jpg">
+                  <source src="../Assets/Video/Funny_move.mp4" poster="./parapresentación.jpg" controls/>
+                </video>
+
+                </div><br><div class="contenedor1">
+    
+                <video  class="video2"   controls poster="./parapresentación.jpg">
+                  <source src="../Assets/Video/Dance.mp4#t=11,23.4" />
+                </video>
+              </div>
+            </div>
+<!--prueba-->
+
+          <!-- <video class="video1"  controls poster="../Assets/Img/Cont/parapresentación.jpg">
+            <source src="../Assets/Video/Funny_move.mp4" poster="./parapresentación.jpg" controls/>
+          </video> <br>
+          <br>
+          <video  class="video2"controls poster="./parapresentación.jpg">
+            <source src="../Assets/Video/Dance.mp4#t=11,23.4" />
+          </video> -->
+     
+      </div>
+
+
+      </div>
+      <div id="Tokyo" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+      <div id="TicTacToe" class="tabcontent">
+        <h3>TicTacToe</h3>
+        <p>A common game for all people .</p>
+        <h1 id="title" class="text">X-O</h1>
+        <p class="text"></p>
+
+        <div id="containerpro">
+            <div id="container-game">
+                <div id="left-top" onclick="pressButton('left-top')" class="game-box"></div>
+                <div id="center-top" onclick="pressButton('center-top')" class="game-box"></div>
+                <div id="right-top" onclick="pressButton('right-top')" class="game-box"></div>
+                <div id="left-center" onclick="pressButton('left-center')" class="game-box"></div>
+                <div id="center-center" onclick="pressButton('center-center')" class="game-box"></div>
+                <div id="right-center" onclick="pressButton('right-center')" class="game-box"></div>
+                <div id="left-bottom" onclick="pressButton('left-bottom')" class="game-box"></div>
+                <div id="center-bottom" onclick="pressButton('center-bottom')" class="game-box"></div>
+                <div id="right-bottom" onclick="pressButton('right-bottom')" class="game-box"></div>
+            </div>
+        </div>
+
+        <h1 id="winner" class="text"></h1>
+    
+
+      </div>
+      <div id="Cars" class="tabcontent">
+        ` <h3>The Fastest Cars</h3>
+        `<p>Unos de los carros más fasinantes .</p>
+        <div class="container__background-triangle">
+          <div class="triangle triangle1"></div>
+          <div class="triangle triangle2"></div>
+          <div class="triangle triangle3"></div>
+        </div>
+        <div class="container__card">
+          <div class="card">
+            <div class="cover__card">
+              <img src="../Assets/Img/Cont/Cart/F.jpg" alt="Ford Mustang" title="Es un Ford Mustang👌" />
+            </div>
+            <h2>Ford Mustang 2022</h2>
+            <p>El desempeño ya corre por tus venas, pero su tecnología avanzada lo está llevando a otro nivel. Ya sean
+              los medidores personalizados en la cabina, las llantas girando sin esfuerzo en la pista o tus dedos
+              seleccionando el volumen del rugido del motor que más te guste, tú sabes que ahora tienes el control para
+              adaptar tu experiencia de conducción como nunca antes.</p>
+            <hr>
+            <div class="footer__card">
+              <h3>Aceleración 0 -100km/h 4,6S</h3>
+              <i>Estados Unidos</i>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cover__card">
+              <img src="../Assets/Img/Cont/Cart/C.jpg" alt="Chevrolet Camaro ZL" title="Es Chevrolet Camaro ZL👌" />
+            </div>
+            <h2>Chevrolet Camaro ZL 2022</h2>
+            <p>El Camaro, un automóvil estadounidense icónico, continua desafiando los límites del desempeño y el
+              estilo. Con un estilo aerodinámico y un interior refinado pensado en ti, está fabricado para integrar
+              perfectamente la forma, la función de alto calibre y el estilo </p>
+            <hr>
+            <div class="footer__card">
+              <h3>Aceleración 0 -100km/h 5,2S</h3>
+              <i>Estados Unidos</i>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cover__card">
+              <img src="../Assets/Img/Cont/Cart/P.jpg" alt="Porche" title="Es un Porche👌" />
+            </div>
+            <h2>Porsche 911 2022</h2>
+            <p>Iconos por sí mismos: la legendaria silueta del 911 se une al carácter purista del Cronógrafo I. El
+              modelo del aniversario, limitado a 750 ejemplares, combina el diseño atemporal de un vehículo deportivo
+              con los elementos característicos de un reloj icónico y continúa así la historia de éxito del 911 y de una
+              manufactura relojera única..</p>
+            <hr>
+            <div class="footer__card">
+              <h3>Aceleración 0 -100km/h 4,2S</h3>
+              <i>Alemania</i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <section class="s2">
+
+      <!-- segunda sección  -->
+      <div class="contenedor">
+
+        <ul class="ul">
+          <li class="li activo">Boton 1</li>
+          <li class="li">Boton 2</li>
+          <li class="li">Boton 3</li>
+          <li class="li">Promedio</li>
+
+          <select class="dropdown-toggle" name="rol" id="rol">
+            <option value="1">Administrador</option>
+            <option value="2">Coordinador</option>
+            <option value="3">Instructor</option>
+            <option value="4">Aprendiz</option>
+          </select>
+        </ul>
+
+
+        <div class="subcontenedor">
+          <div class="bloque activo">
+            <a class="link1" href="https://www.youtube.com/watch?v=TUbtye9qx34">Soy el bloque 1</a>
+          </div>
+          <div class="bloque">
+            <a class="link2" href="https://www.youtube.com/watch?v=ehQ2YnE8bMI">subnetting class</a>
+          </div>
+          <div class="bloque">
+            <a class="link3" href="https://www.youtube.com/watch?v=QxsTYdGArMU">Unity</a>
+          </div>
+          <div class="bloque">
+            <a class="link4" href="https://kilordgosth.github.io/Promedio/">Promedio</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <br>
+    <br>
+    <section class="s3">
+      <!--my boton tercera sesion 
+              -->
+      <button class="boton_personalizado" type="submit">Ingresar </button>
+      <br>
+      <br>
+
+      <button class="custom-btn blueb"><span>Click! About me</span><span>Read More</span></button>
+    </section>
+
+  </main>
+  <footer class="fppter">
+  </footer>
+</body>
+
+</html>
