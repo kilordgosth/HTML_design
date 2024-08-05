@@ -1,58 +1,43 @@
-/* Estilos existentes */
-.delimitador1 {
-    width: 560px;
-    margin: auto;
+/* Estilos generales para los videos */
+.video1, .video2 {
+    /* Establecemos un tamaño inicial fijo en píxeles (ajusta según tus necesidades) */
+    width: 189px; /* Aproximadamente 5cm a 96 DPI */
+    height: 227px; /* Aproximadamente 6cm a 96 DPI */
+    object-fit: contain; /* Mantiene la proporción del video */
 }
 
+/* Media query para ajustar el tamaño según el dispositivo */
+@media (min-width: 768px) {
+    /* Cuando la pantalla es más ancha de 768px, los videos ocupan todo el ancho disponible */
+    .video1, .video2 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Estilos específicos para los contenedores y posicionamiento */
 .contenedor1 .video1, .contenedor1 .video2 {
-    max-width: auto;
-    min-width: auto;
-    max-height: auto;
-    min-height: auto;
-    padding: 0.8em;
-    right: 1000px;
-    bottom: 300px;
-    border-radius: 0.5em;
-    background-color: var(--blanco);
-}
-
-.video1 {
+    /* Mantén los estilos de posicionamiento y diseño */
     position: relative;
-    height: 50%;
-    width: 40%;
-    top: 0px;
-    left: 0px;
-    transform: scale(5 1);
+    /* ... otros estilos */
 }
 
-.video2 {
-    position: relative;
-    height: 50%;
-    width: 40%;
-    top: 0px;
-    left: 0px;
-    transform: scale(5 0.01);
+/* Elimina estilos conflictivos de los videos */
+.video1, .video2 {
+    /* Elimina los estilos que ya se definieron en la regla general */
+    max-width: none;
+    min-width: none;
+    max-height: none;
+    min-height: none;
+    padding: 0;
+    right: auto;
+    bottom: auto;
+    transform: none;
 }
 
-/* Nuevos estilos */
-.subcontenedor {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0; /* Ajusta esta propiedad para controlar la posición vertical */
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999; /*Asigna un valor alto para que se muestre por encima de otros elementos */
-    
-}
-
-.bloque {
-    margin-bottom: 10px;
-}
-
+/* Estilos para la clase .video que podría estar interfiriendo */
 .video {
-    width: 6cm;
-    height: 5cm;
-    border: none;
+    /* Elimina los estilos si no son necesarios */
+    width: auto;
+    height: auto;
 }
