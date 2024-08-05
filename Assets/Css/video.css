@@ -38,6 +38,13 @@
 .subcontenedor {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 0; /* Ajusta esta propiedad para controlar la posición vertical */
+    left: 0;
+  /*  width: 100%;
+    height: 100%;*/
+    z-index: 999; /*Asigna un valor alto para que se muestre por encima de otros elementos */
+    
 }
 
 .bloque {
