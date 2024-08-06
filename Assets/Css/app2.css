@@ -171,7 +171,7 @@ main {
 }
 
 .s2{
-  /*position: relative;*/
+  position: relative;
   background-color: #f5ba09;
   Min-height: 30rem;
   height:auto;
@@ -209,7 +209,9 @@ main {
   box-shadow: 0.3em 0.3em 0.6em var(--sombra-ppal), -0.3em -0.3em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;   
 
 }
-  /*.subcontenedor*/
+  .subcontenedor{
+    position: absolute;
+  }
 
 
 
