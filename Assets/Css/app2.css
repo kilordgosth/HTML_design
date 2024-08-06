@@ -197,8 +197,8 @@ main {
     max-height: 100em;
     max-height: auto;
     padding: 1em;
-    position: relative;
-    /*position: absolute;*/
+    /*position: relative;*/
+    position: absolute;
     right: -1000px;
     bottom: -300px;
     color: var(--negro);
