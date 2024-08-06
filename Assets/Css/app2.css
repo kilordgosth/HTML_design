@@ -172,7 +172,7 @@ main {
 
 .s2{
   background-color: #f5ba09;
-  Min-height: 15rem;
+  Min-height: 25rem;
   height:auto;
   margin: 1rem;
   padding: 1rem;
@@ -187,6 +187,9 @@ main {
 }
 
   .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     max-width: auto;
     min-width: auto;
