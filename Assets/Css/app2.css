@@ -188,6 +188,7 @@ main {
 }
 
   .contenedor {
+  position: relative;
   display: flex;
   justify-content: flex-start; /* Alinea los elementos al inicio (izquierda) */
   align-items: center;
