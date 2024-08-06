@@ -212,7 +212,7 @@ main {
 }
 .subcontenedor {
   position: relative;
-  left:  -200px; /* Ajusta según sea necesario */
+  left:  -600px; /* Ajusta según sea necesario */
   top: 50px; /* Ajusta según sea necesario */
   margin-top: 10px; /* Espaciado adicional si es necesario */
 }
