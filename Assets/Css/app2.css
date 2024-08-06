@@ -172,7 +172,7 @@ main {
 
 .s2{
   background-color: #f5ba09;
-  Min-height: 25rem;
+  Min-height: 30rem;
   height:auto;
   margin: 1rem;
   padding: 1rem;
@@ -190,10 +190,11 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 100%;
     max-width: auto;
     min-width: auto;
-    max-height: 50em;
+    /*max-height: 100em;*/
+    max-height: auto;
     padding: 1em;
     /* position: relative; */
     right: -1000px;
