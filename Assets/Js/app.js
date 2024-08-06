@@ -1,31 +1,22 @@
-'use strict'
+'use strict';
 
-const li        = document.querySelectorAll('.li')
-const bloque    = document.querySelectorAll('.bloque')
+const lis = document.querySelectorAll('.li');
+const bloques = document.querySelectorAll('.bloque');
 
-// CLICK en li
-    // TODOS .li quitar la clase activo
-    // TODOS .bloque quitar la clase activo
-    // .li con la posicion se añadimos la clase activo
-    // .bloque con la posicion se añadimos la clase activo
+// Función para mostrar el elemento seleccionado
+function mostrarElemento(index) {
+  // Elimina la clase 'activo' de todos los elementos
+  lis.forEach(li => li.classList.remove('activo'));
+  bloques.forEach(bloque => bloque.classList.remove('activo'));
 
-// Recorriendo todos los LI
-li.forEach( ( cadaLi , i )=>{
-    // Asignando un CLICK a CADALI
-    li[i].addEventListener('click',()=>{
+  // Agrega la clase 'activo' al elemento seleccionado
+  lis[index].classList.add('activo');
+  bloques[index].classList.add('activo');
+}
 
-        // Recorrer TODOS los .li
-        li.forEach( ( cadaLi , i )=>{
-            // Quitando la clase activo de cada li
-            li[i].classList.remove('activo')
-            // Quitando la clase activo de cada bloque
-            bloque[i].classList.remove('activo')
-        })
-
-        // En el li que hemos click le añadimos la clase activo
-        li[i].classList.add('activo')
-        // En el bloque con la misma posición le añadimos la clase activo
-        bloque[i].classList.add('activo')
-
-    })
-})
+// Agrega un evento de clic a cada elemento li
+lis.forEach((li, index) => {
+  li.addEventListener('click', () => {
+    mostrarElemento(index);
+  });
+});
