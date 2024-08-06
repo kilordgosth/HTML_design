@@ -215,8 +215,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*left:  -400px; /* Ajusta según sea necesario */
- /* top: 100px; /* Ajusta según sea necesario */
+  left:  -150px; /* Ajusta left */
+  top: 100px; /* Ajusta según sea necesario */
   /*margin-top: 10px; /* Espaciado adicional si es necesario */
 }
 
@@ -225,8 +225,8 @@ main {
 }
 
 .video {
-  width: 200px; /*  */
-  height: 150px; /*  */
+  width: 250px; /*  */
+  height: 200px; /*  */
   border: 2px solid black; /* Un borde de 2px de ancho, de color negro */
   border-radius: 10px;
 }
