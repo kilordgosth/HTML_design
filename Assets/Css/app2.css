@@ -212,9 +212,12 @@ main {
 }
 .subcontenedor {
   position: relative;
-  left:  -400px; /* Ajusta según sea necesario */
-  top: 100px; /* Ajusta según sea necesario */
-  margin-top: 10px; /* Espaciado adicional si es necesario */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*left:  -400px; /* Ajusta según sea necesario */
+ /* top: 100px; /* Ajusta según sea necesario */
+  /*margin-top: 10px; /* Espaciado adicional si es necesario */
 }
 
 .bloque {
