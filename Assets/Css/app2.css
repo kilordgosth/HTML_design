@@ -179,9 +179,6 @@ main {
   padding: 1rem;
   border: 2px solid #ccc;
   border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   word-wrap: break-word;
 }
@@ -193,28 +190,20 @@ main {
   width: 100%;
   max-width: auto;
   min-width: auto;
-  /* max-height: 100em; */
   max-height: auto;
   padding: 1em;
-  /* Elimina propiedades innecesarias */
-  /* position: relative;
-     position: absolute;
-     right: -1000px;
-     bottom: -300px; */
   color: var(--negro);
   transition: all 0.4s ease;
   border-radius: 0.5em;
   background-color: var(--blanco);
-  box-shadow: 0.3em 0.3em 0.6em var(--sombra-ppal), -0.3em -0.3em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;   
+  box-shadow: 0.3em 0.3em 0.6em var(--sombra-ppal), -0.3em -0.3em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
 }
 
 .subcontenedor {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-top: 10px; /* Espaciado adicional si es necesario */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .bloque {
@@ -226,7 +215,6 @@ main {
   height: 5cm;
   border: none;
 }
-
 
 
 .s3{
