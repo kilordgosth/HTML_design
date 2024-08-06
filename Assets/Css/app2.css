@@ -210,10 +210,10 @@ main {
     -webkit-box-shadow: 0.3em 0.3em 0.6em var(--sombra-ppal), -0.3em -0.3em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
             box-shadow: 0.3em 0.3em 0.6em var(--sombra-ppal), -0.3em -0.3em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
   }
-.subcontenedor{
-    position: absolute;
+    .subcontenedor{
+      position: absolute;
    
-  }
+      }
 
 .s3{
   background-color: #212a89;
